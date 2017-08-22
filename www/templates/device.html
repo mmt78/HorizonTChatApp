@@ -1,0 +1,27 @@
+<ion-view view-title="{{ 'PAGES.DEVICE_TITLE' | translate }}" hide-back-button="false">
+    <ion-content class="padding has-header">
+        <div class="text-center">
+            <img src="img/logo.png">
+        </div>
+        <div class="list">
+            <div class="item" ng-show="user_type == 'driver'">
+                <h3>{{deviceName}}</h3>
+                <div class="button-bar">
+                    <a class="button button-small" ng-class="{ 'button-assertive' : (tripType == 1), 'button-calm' :  (tripType == 2) }" ng-click="setTripType({{deviceId}}, '1')">{{ 'LIST.DRIVING_TYPE_PUBLIC' | translate }}</a>
+                    <a class="button button-small" ng-class="{ 'button-assertive' : (tripType == 2), 'button-calm' : (tripType == 1) }" ng-click="setTripType({{deviceId}}, '2')">{{ 'LIST.DRIVING_TYPE_PRIVATE' | translate }}</a>
+                </div>
+            </div>
+            <div class="item" ng-show="user_type == 'user'">
+                <!-- <label class="toggle toggle-assertive"> -->
+                     <label class="left-label">{{'DEVICE.DEVICE_INACTIVE' | translate}}</label>
+                    <!-- <input type="checkbox" ng-model="hideStatus" ng-true-value="'true'" ng-false-value="'false'" ng-change="hideShowDevice({{deviceId}})"> -->
+                    <ion-toggle ion-toggle-text ng-model="hideStatus" ng-true-value="'true'" ng-false-value="'false'" ng-change="hideShowDevice({{deviceId}})">{{deviceName}}</ion-toggle>
+                    <label class="right-label">{{'DEVICE.DEVICE_ACTIVE' | translate}}</label>
+                    <!-- <div class="track">
+                        <div class="handle"></div>
+                    </div> -->
+                <!-- </label> -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

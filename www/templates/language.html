@@ -1,0 +1,10 @@
+<ion-view view-title="{{ 'PAGES.LANGUAGE_TITLE' | translate}}">
+  <ion-content class="lang-settings">
+    <ion-list class="list">
+      <ion-radio ng-click="changeLanguage(language)" ng-model="language" ng-value="'de'"><i class="icon"><img src="img/flags/de.png"></i> {{'LANG.DE' | translate}}</ion-radio>
+      <ion-radio ng-click="changeLanguage(language)" ng-model="language" ng-value="'nl'"><i class="icon"><img src="img/flags/nl.png"></i> {{'LANG.NL' | translate}}</ion-radio>
+      <ion-radio ng-click="changeLanguage(language)" ng-model="language" ng-value="'tr'"><i class="icon"><img src="img/flags/tr.png"></i> {{'LANG.TR' | translate}}</ion-radio>
+      <ion-radio ng-click="changeLanguage(language)" ng-model="language" ng-value="'en'"><i class="icon"><img src="img/flags/en.png"></i> {{'LANG.EN' | translate}}</ion-radio>
+    </ion-list>
+  </ion-content>
+</ion-view>

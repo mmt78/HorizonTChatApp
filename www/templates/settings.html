@@ -1,0 +1,24 @@
+<ion-view view-title="{{ 'PAGES.SETTINGS_TITLE' | translate }}" hide-back-button="false">
+    <ion-content class="padding has-header">
+        <div class="text-center">
+            <img src="img/logo.png">
+        </div>
+        <div class="list">
+            <div class="item item-divider">
+                {{ 'MENU.SETTINGS' | translate }}
+            </div>
+            <a class="item item-button-right">
+                 <!-- <img ng-src="{{user.image ? 'https://www.profi-ortung.de/assets/uploads/' + user.type + 's/' + user.image : 'img/dummy_icon.png'}}">  -->
+                {{ 'MENU.PROFILE_PICTURE' | translate }}
+                <button class="button button-assertive" ng-click="picUpload()">
+                    <i class="icon ion-camera"></i>
+                </button>
+            </a>
+            <a class="item item-icon-right" href="#/app/language">
+                <!-- <img src="{{user.image ? 'https://www.profi-ortung.de/assets/uploads/' + user.type + 's/' + user.image : 'img/dummy_icon.png'}}"> -->
+                {{ 'MENU.LANGUAGE' | translate }}
+                <i class="icon"><img ng-src="{{'img/flags/' + language + '.png'}}"/></i>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

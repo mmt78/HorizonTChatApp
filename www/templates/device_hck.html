@@ -1,0 +1,39 @@
+<ion-view view-title="{{ 'PAGES.DEVICE_TITLE' | translate }}" hide-back-button="false">
+    <ion-content class="padding has-header">
+        <div class="text-center">
+            <img src="img/logo.png">
+        </div>
+        <div class="list">
+            <div class="item" ng-show="user_type == 'driver'">
+                <div class="row">
+                    <div class="col-33" style="padding-top: 12px;">
+                       <b>{{deviceName}}</b>
+                    </div>
+                    <div class="col-33" style="margin: 0 5px">
+                        <a class="button button-assertive trip_type_button" ng-click="setTripType(deviceId, '1')">
+                            {{ 'LIST.DRIVING_TYPE_PUBLIC' | translate }}
+                        </a>
+                    </div>
+                    <div class="col-33" style="margin: 0 5px">
+                        <a class="button button-calm trip_type_button" ng-click="setTripType(deviceId, '2')">
+                            {{ 'LIST.DRIVING_TYPE_PRIVATE' | translate }}
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="item" ng-show="user_type == 'user'">
+                <!-- <label class="toggle toggle-assertive"> -->
+                <label class="left-label">{{'DEVICE.DEVICE_INACTIVE' | translate}}</label>
+                <!-- <input type="checkbox" ng-model="hideStatus" ng-true-value="'true'" ng-false-value="'false'" ng-change="hideShowDevice({{deviceId}})"> -->
+                <ion-toggle ion-toggle-text ng-model="hideStatus" ng-true-value="'true'" ng-false-value="'false'"
+                            ng-change="hideShowDevice(deviceId)">{{deviceName}}
+                </ion-toggle>
+                <label class="right-label">{{'DEVICE.DEVICE_ACTIVE' | translate}}</label>
+                <!-- <div class="track">
+                    <div class="handle"></div>
+                </div> -->
+                <!-- </label> -->
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

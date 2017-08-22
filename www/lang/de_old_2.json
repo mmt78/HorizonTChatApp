@@ -1,0 +1,93 @@
+{
+    "APP_TITLE": "Horizont Auftrags-App",
+    "LOGOUT_TITLE": "Logout",
+    "ALL_DEVICES": "Alle GPS Geräte",
+    "SEARCH_DEVICE": "Suche GPS Geräte..",
+    "LANGUAGE": "Sprache",
+    "PLEASE_WAIT": "Bitte warten..",
+    "LOADING": "Ladem..",
+    "TIMEZONE": "Zeitzone",
+    "FILTER": "Filter",
+    "SORT_DEVICE" : "Sortieren ",
+    "DISPLAY": "Anzeige",
+    "TOTAL": "Total",
+    "DISPLAY_DEVICE_COUNT": "Anzahl der GPS Geräte ",
+    "SAVE": "speichern",
+    "CANCEL": "Abrechen",
+    "NO_NOTIFICATIONS": "Keine Benachrichtigungen",
+    "NEW_NOTIFICATION": "Neue Benachrichtigungen!",
+    "NOTIFICATION_SETTINGS": "Benachrictigungseinstellungen",
+    "PERMISSION_DENIED": "Zugriff verweigert !",
+    "PERMISSION_MESSAGE": "Sie haben keine Erlaubnis  für diese Option, bitte wenden Sie sich an unseren Support unter 030 3553 0677 0 .",
+    "CONNECTION_ERROR": "Verbindungsfehler!",
+    "CONNECTION_ERROR_MSG": "Bitte überprüfen Sie ihre Internetverbindung.",
+    "AN_ERROR_OCCURRED": "Etwas ist schief gelaufen. Versuchen Sie es später nocheinmal.",
+    "LOGIN": {
+        "TITLE": "Horizont Login",
+        "BUTTON": "Login",
+        "USERNAME": "Benutzername",
+        "PASSWORD": "Passwort",
+        "LOGGING_IN": "Logging in..",
+        "FAILED": "Login fehlgeschlagen!",
+        "INVALID_INPUTS": "Ungültiger Benutzer oder Passwort.",
+        "USER" : "Benutzer",
+        "DRIVER" : "Fahrer",
+        "POPUP_TITLE" : "Error!"
+    },
+    "LOGOUT": {
+        "SUCCESS" : "Erfolgreich abgemeldet",
+        "ERROR" : "Ein Fehler aufgetreten. Versuchen sie es später nocheinmal!"
+    },
+    "CHAT": {
+        "IS_TYPING": " schreibend...",
+        "CHAT_INPUT_BOX": "Geben Sie Ihre Nachricht...",
+        "CHAT_PROGRESS": "Chat mit ",  
+        "CHAT_QUICK_REPLY_YES" : "Ja",      
+        "CHAT_QUICK_REPLY_NO" : "Nein",      
+        "CHAT_QUICK_REPLY_OK" : "OK",
+        "CHAT_NOT_DELIVERED" : "Nachricht nicht versendet"     
+    },
+    "LIST" : {
+        "DRIVER_LIST_HEADER": "Fahrerliste",
+        "USER_LIST_HEADER": "Benutzerliste",
+        "USER_NOT_FOUND": "Keine Benutzer gefunden!",
+        "DRIVER_NOT_FOUND": "Keine Fahrer gefunden!",
+        "DRIVING_TYPE_MODAL_TITLE" : "Fahrertype auswählen",
+        "DRIVING_TYPE_MODAL_CLOSE" : "Schliessen",
+        "DRIVING_TYPE_PRIVATE": "Privat",
+        "DRIVING_TYPE_PUBLIC" : "Arbeit",
+        "DRIVING_TYPE_POPUP_TITLE" : "Fahrtauswahl fehlerhaft",
+        "DRIVING_TYPE_ERROR" : "Fahrtauswahl kann nicht gespeichert werden!"
+    },
+    "DEVICE" : {
+        "DEVICE_TYPE_SUCCESS" : "Gerätetypeauswahl erfolgreich",
+        "DEVICE_STATUS_SUCCESS" : "Geräte Status auswahl erfolgreich",
+        "DEVICE_ACTIVE": "Aktiv",
+        "DEVICE_INACTIVE" : "Inaktiv"
+    },
+    "MENU": {
+        "TITLE": "Menu",
+        "DEVICE_MENU": "Geräte Menu",
+        "ROUTE": "Route",
+        "NOTIFICATIONS": "Benachrichtigungen",
+        "DEVICES": "Geräte",
+        "SETTINGS": "Auswahl",
+        "LOGOUT": "Logout",
+        "PROFILE_PICTURE": "Profilfoto",
+        "LANGUAGE": "Sprache",
+        "PROFILE_PICTURE_SUCCESS": "Profilfoto erfolgreich geladen.",
+        "PROFILE_PICTURE_ERROR": "Profilfoto nicht erfolgreich hochgeladen, vitte versuchen Sie es später nocheinmal!"
+    },
+    "PAGES": {
+        "DEVICES_TITLE": "Geräte",
+        "DEVICE_TITLE": "Gerät",
+        "SETTINGS_TITLE": "Auswahl",
+        "LANGUAGE_TITLE": "Sprache"
+    },
+    "LANG": {
+        "TR": "Türkisch",
+        "EN": "Englisch",
+        "DE": "Deutsch",
+        "NL": "Niederländisch"
+    }
+}

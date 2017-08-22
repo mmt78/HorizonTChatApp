@@ -1,0 +1,35 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content>
+        <ion-nav-bar class="bar-positive">
+            <ion-nav-back-button></ion-nav-back-button>
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="right"></button>
+            </ion-nav-buttons>
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+    <ion-side-menu side="right">
+        <ion-header-bar class="bar-profile">
+            <div class="profile">
+                <img src="{{user.image ? 'https://www.profi-ortung.de/assets/uploads/' + user.type + 's/' + user.image : 'img/dummy_icon.png'}}">
+                <h3 class="name">{{ user.name }} {{ user.surname }}</h2>
+            </div>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item menu-toggle = "right" class="item-icon-left" href="#app/devices">
+                <i class="ion-model-s"></i> {{ 'MENU.DEVICES' | translate}}
+                </ion-item>
+                <ion-item menu-toggle = "right" class="item-icon-left" href="#/app/settings">
+                <i class="ion-wrench"></i> {{ 'MENU.SETTINGS' | translate}}
+                </ion-item>
+                <ion-item menu-toggle = "right" class="item-icon-left" href="#/app/privacy">
+                <i class="ion-document-text"></i> {{ 'MENU.PRIVACY' | translate}}
+                </ion-item>
+                <ion-item menu-toggle = "right" class="item-icon-left" ng-click = "logout(user.type)">
+                <i class="ion-log-out"></i> {{ 'MENU.LOGOUT' | translate}}
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

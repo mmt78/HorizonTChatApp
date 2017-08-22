@@ -1,0 +1,30 @@
+<ion-view hide-back-button="false">
+    <ion-nav-title>
+        <div class="row no-padding">
+            <div class="col-20 no-padding">
+                <span style="font-size: 75%;">
+                   {{ 'PAGES.DEVICES_TITLE' | translate }}
+                </span>
+            </div>
+            <div class="col-80 no-padding">
+                <img class="title-image" src="img/horizont_logo2.jpg" style="float: right" />
+            </div>
+        </div>
+    </ion-nav-title>
+    <ion-content class="padding has-header device_list">
+        <div ng-show="user_type == 'user'" class="list devices" ng-repeat="device in devices">
+            <a class="item item-avatar" href="#/app/devices/{{device.name}}/{{device.device_id}}/{{device.hide_status}}/0">
+                <img ng-src="{{ 'img/car/car_' + device.type + '.gif' }}" />
+                <h3>{{ device.name }}</h3>
+            </a>
+        </div>
+        <div ng-show="user_type == 'driver'"  class="list devices" ng-repeat="device in devices">
+            <a class="item item-avatar" ng-class="{ 'selected' : (user.device_id == device.device_id) }" href="#/app/devices/{{device.name}}/{{device.device_id}}/{{device.hide_status}}/{{user.device_trip_type}}">
+                <img ng-src="{{ 'img/car/car_' + device.type + '.gif' }}" />
+                <h3>{{ device.name }}</h3>
+                <h4>{{ device.active_driver_first_name }} {{ device.active_driver_last_name }}</h4>
+                <p ng-show="user.device_id == device.device_id">{{ user.device_trip_type == 1 ? 'LIST.DRIVING_TYPE_PUBLIC'  : 'LIST.DRIVING_TYPE_PRIVATE' | translate }}</p>
+            </a>
+        </div>
+    </ion-content>
+</ion-view>

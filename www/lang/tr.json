@@ -1,0 +1,91 @@
+{
+	"APP_TITLE": "Horizont Auftrags-App",
+	"ALL_DEVICES": "Tüm Cihazlar",
+	"SEARCH_DEVICE": "Cihaz ara",
+	"LANGUAGE": "Dil",
+	"PLEASE_WAIT": "Lütfen bekleyin ...",
+	"LOADING": "Yükleniyor ..",
+	"TIMEZONE": "Saat dilimi",
+	"FILTER": "Filtre",
+	"SORT_DEVICE": "Cihaz Sıralama Türü",
+	"EKRAN": "Ekran",
+	"TOPLAM": "Toplam",
+	"DISPLAY_DEVICE_COUNT": "Görüntülü Reklam Ağı Cihaz Sayısı",
+	"KAYDET": "Kaydet",
+	"CANCEL": "İptal",
+	"NO_NOTIFICATIONS": "Bildiriminiz yok",
+	"NEW_NOTIFICATION": "Yeni Bildirim!",
+	"NOTIFICATION_SETTINGS": "Bildirim Ayarları",
+	"PERMISSION_DENIED": "İzin engellendi!",
+	"PERMISSION_MESSAGE": "Bu özellik için izniniz yok, lütfen müşteri hizmetlerimize başvurun.",
+	"CONNECTION_ERROR": "Bağlantı hatası!",
+	"CONNECTION_ERROR_MSG": "Lütfen internet bağlantınızı kontrol edin.",
+	"AN_ERROR_OCCURRED": "Bir sorun oluştu, lütfen daha sonra tekrar deneyin.",
+	"LOGIN": {
+		"TITLE": "Yatay Girişi",
+		"BUTON": "Giriş",
+		"USERNAME": "Kullanıcı adı",
+		"ŞİFRE": "Şifre",
+		"LOGGING_IN": "Oturum açılıyor ..",
+		"FAILED": "Oturum açılamadı!",
+		"INVALID_INPUTS": "Geçersiz kullanıcı adı veya şifre.",
+		"USER" : "Kullanıcı",
+        "DRIVER" : "Sürücü",
+        "POPUP_TITLE" : "Hata!"
+	},
+	"LOGOUT": {
+        "SUCCESS" : "Başarıyla çıkış yapıldı",
+        "ERROR" : "Bir hata oluştu. Tekrar deneyiniz!"
+	},
+	"CHAT": {
+        "IS_TYPING": " yazıyor...",
+        "CHAT_INPUT_BOX": "Mesajınızı giriniz...",
+        "CHAT_PROGRESS": "Chatting as ",  
+        "CHAT_QUICK_REPLY_YES" : "EVET",      
+        "CHAT_QUICK_REPLY_NO" : "HAYIR",      
+        "CHAT_QUICK_REPLY_OK" : "TAMAM",
+        "CHAT_NOT_DELIVERED" : "Mesaj gönderilemedi"     
+	},
+	"LIST" : {
+        "DRIVER_LIST_HEADER": "Sürücü Listesi",
+        "USER_LIST_HEADER": "Kullanıcı Listesi",
+        "USER_NOT_FOUND": "Kayıtlı kullanıcı bulunamadı!",
+        "DRIVER_NOT_FOUND": "Kayıtlı sürücü bulunamadı!",
+        "DRIVING_TYPE_MODAL_TITLE" : "Sürüş tipini seçiniz",
+        "DRIVING_TYPE_MODAL_CLOSE" : "Kapat",
+        "DRIVING_TYPE_PRIVATE": "ÖZEL",
+        "DRIVING_TYPE_PUBLIC" : "İŞ",
+        "DRIVING_TYPE_POPUP_TITLE" : "Sürüş Tipi Hatası",
+        "DRIVING_TYPE_ERROR" : "Sürüş tipi kaydedilemedi!"
+    },
+    "DEVICE" : {
+        "DEVICE_TYPE_SUCCESS" : "Aygıt türü başarıyla ayarlandı.",
+        "DEVICE_STATUS_SUCCESS" : "Aygıt durumu başarıyla ayarlandı.",
+        "DEVICE_ACTIVE": "Aktif",
+        "DEVICE_INACTIVE" : "Pasif"
+    },
+	"MENU": {
+		"TITLE": "Menü",
+        "ROUTE": "Route",
+        "DEVICES": "Aygıtlar",
+        "SETTINGS": "Ayarlar",
+		"DEVICE_MENU": "Cihaz Menüsü",
+		"LOGOUT": "Çıkış",
+		"PROFILE_PICTURE": "Profil Resmi",
+        "LANGUAGE": "Dil",
+        "PROFILE_PICTURE_SUCCESS": "Profil resmi başarıyla yüklendi.",
+        "PROFILE_PICTURE_ERROR": "Profil resmi yüklenemedi. Daha sonra tekrar deneyiniz!"
+	},
+    "PAGES": {
+        "DEVICES_TITLE": "Aygıtlar",
+        "DEVICE_TITLE": "Aygıt",
+        "SETTINGS_TITLE": "Ayarlar",
+        "LANGUAGE_TITLE": "Dil"
+    },
+	"LANG": {
+		"TR": "Türkçe",
+		"EN": "İngilizce",
+		"DE": "Almanca",
+		"NL": "Hollandaca"
+	}
+}

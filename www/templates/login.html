@@ -1,15 +1,40 @@
-<ion-view ng-controller="LoginController">
-    <ion-header-bar class="bar-dark">
-        <div class="title">Welcome to ChatApp</div>
-    </ion-header-bar>
-    <ion-content>
-        <div class="list">
-            <div class="item item-input padding">
-                <label for="" class="item-input-wrapper">
-                    <input type="text" placeholder="Enter your name..." ng-model="nickname">
-                </label>
-                <button class="button button-small button-dark icon icon-right ion-log-in" ng-click="join(nickname)">Login</button>
-            </div>
-        </div>
-    </ion-content>
+<ion-view hide-nav-bar="true">
+  <ion-content class="login-content">
+    <div class="text-center">
+      <img src="img/logo.png">
+    </div>
+    <div class="card login-card">
+      <div class="item item-text-wrap">
+        <form>
+          <div class="list">
+            <label class="item item-input">
+              <span class="input-label">{{'LOGIN.USERNAME' | translate}}</span>
+              <input type="text" ng-model="loginData.username" id="username">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">{{'LOGIN.PASSWORD' | translate}}</span>
+              <input type="password" ng-model="loginData.password">
+            </label>
+            <label class="item item-input">
+                <ion-radio ng-model="loginData.type" ng-value="'user'">{{'LOGIN.USER' | translate}}</ion-radio>
+                <ion-radio ng-model="loginData.type" ng-value="'driver'">{{'LOGIN.DRIVER' | translate}}</ion-radio>
+            </label>
+<!--            <label>
+              <div class="text-right">
+                <button type="button" class="button button-clear button-positive">
+                  Forgot Password
+                </button>
+              </div>
+            </label>-->
+            <label class="item border-none">
+              <button class="button button-block button-positive" type="submit" ng-click="doLogin(loginData.username, loginData.password, loginData.type)">
+                <div ng-if="!loading">{{'LOGIN.BUTTON' | translate}}</div>
+                <div ng-if="loading" class="center-vertical-horizontal"><ion-spinner icon="spiral" class="spinner-light button-spinner"></ion-spinner> {{'LOGIN.LOGGING_IN' | translate}}</div>
+              </button>
+            </label>
+          </div>
+        </form>
+      </div>
+    </div><!-- // card -->
+  </ion-content>
 </ion-view>

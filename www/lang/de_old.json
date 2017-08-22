@@ -1,0 +1,100 @@
+{
+    
+    "ALL_DEVICES": "Alle Fahrzeuge",
+    "SEARCH_DEVICE": "Gerät suchen..",
+    "LANGUAGE": "Sprache",
+    "TIMEZONE": "Zeitzone",
+    "FILTER": "Filtern",
+    "SORT_DEVICE" : "Geräte sortieren",
+    "DISPLAY": "Anzeigen",
+    "TOTAL": "Gesamt",
+    "DISPLAY_DEVICE_COUNT": "Zählerstand anzeigen",
+    "SAVE": "Sparen",
+    "CANCEL": "Stornieren",
+    "NO_NOTIFICATIONS": "Sie haben keine Benachrichtigungen",
+    "NEW_NOTIFICATION": "Neue Benachrichtigung!",
+    "NOTIFICATION_SETTINGS": "Benachrichtigungseinstellungen",
+    "PERMISSION_DENIED": "Erlaubnis verweigert!",
+    "PERMISSION_MESSAGE": "Sie haben keine Berechtigung für diese Funktion. Bitte kontaktieren Sie unseren Kundendienst.",
+    "CONNECTION_ERROR": "Verbindungsfehler!",
+    "CONNECTION_ERROR_MSG": "Bitte überprüfe deine Internetverbindung.",
+    "AN_ERROR_OCCURRED": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später noch einmal.",
+
+    "LOGIN": {
+        "TITLE": "Horizont Login",
+        "BUTTON": "Login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "LOGGING_IN": "Einloggen..",
+        "FAILED": "Anmeldung fehlgeschlagen!",
+        "INVALID_INPUTS": "Ungültiger Benutzername oder Passwort."
+    },
+    
+	"MENU": {
+        "TITLE": "Menü",
+        "DEVICE_MENU": "Device Menü",
+        "ROUTE": "Route",
+        "NOTIFICATIONS": "Benachrichtigungen",
+        "SETTINGS": "Grundeinstellung",
+        "LOGOUT": "Logout"
+    },
+
+    "LANG": {
+        "TR": "Türkisch",
+        "EN": "Englisch",
+        "DE": "Deutsch",
+        "NL": "Holländisch"
+    },
+
+    "SORT_TYPES": {
+        "A_Z": "A-Z",
+        "Z_A": "Z-A",
+        "IGNITION": "Kontakt",
+        "DAY_START": "Erster Start",
+        "DAILY_MILEAGE": "Tägliche Laufleistung",
+        "SPEED": "Geschwindigkeit"
+    },
+
+    "DAYS_NUMERIC": {
+        "DAY_1": "Montag",
+        "DAY_2": "Dienstag",
+        "DAY_3": "Mittwoch",
+        "DAY_4": "Donnerstag",
+        "DAY_5": "Freitag",
+        "DAY_6": "Samstag",
+        "DAY_0": "Sonntag"
+    },
+
+    "MONTHS_NUMERIC": {
+        "MONTH_0": "Januar",
+        "MONTH_1": "Februar",
+        "MONTH_2": "März",
+        "MONTH_3": "April",
+        "MONTH_4": "Mai",
+        "MONTH_5": "Juni",
+        "MONTH_6": "Juli",
+        "MONTH_7": "August",
+        "MONTH_8": "September",
+        "MONTH_9": "Oktober",
+        "MONTH_10": "November",
+        "MONTH_11": "Dezember"
+    },
+
+    "NOTIFICATION_TYPES": {
+        "1": "The vehicles that not getting signal for more than an hour",
+        "2": "Movement notifications for not permitted hours.",
+        "3": "Enters or exits notifications for specific zones",
+        "4": "Ignition status notification",
+        "5": "Vehicle door on Notification",
+        "6": "Daily millage limit notification",
+        "7": "City speed limit notification",
+        "8": "Upstate speed limit notification",
+        "9": "Highway speed limit notification",
+        "10": "Driving time notification",
+        "11": "Parking time notification",
+        "13": "Start/Stop Count notification",
+        "14": "Heat sensor notification",
+        "15": "Fuel sensor notification",
+        "16": "Area-Based Enter/Exit Notifications"
+    }
+}

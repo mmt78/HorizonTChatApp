@@ -1,0 +1,31 @@
+{
+    
+    "ALL_DEVICES": "All Devices",
+    "SEARCH_DEVICE": "Search device..",
+    "LANGUAGE": "Language",
+
+
+    "LOGIN": {
+        "TITLE": "Horizont Login",
+        "BUTTON": "Login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "LOGGING_IN": "Logging in..",
+        "FAILED": "Login failed!",
+        "INVALID_INPUTS": "Invalid username or password."
+    },
+    
+	"MENU": {
+        "TITLE": "Menu",
+        "DEVICE_MENU": "Device Menu",
+        "SETTINGS": "Settings-Hollanda",
+		"LOGOUT": "Logout"
+	},
+
+    "LANG": {
+        "TR": "Turkish",
+        "EN": "English",
+        "DE": "German",
+        "NL": "Dutch"
+    }
+}

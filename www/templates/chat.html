@@ -1,17 +1,43 @@
-<ion-view ng-controller="ChatController">
-    <ion-header-bar class="bar-dark">
-        <div class="title">Chatting as {{nickname}}</div>
-    </ion-header-bar>
-    <div class="bar bar-subheader">
-        <p class="title">{{message}}</p>
-    </div>
-    <ion-content>
-        
+ <ion-view title="<img src='{{receiver.image ? 'https://www.profi-ortung.de/assets/uploads/' + receiver.type + 's/' + receiver.image : 'img/dummy_icon.png'}}' width='32' height='32'/> {{ receiver.name }} {{ receiver.surname }}" hide-back-button="false">
+<!-- <ion-view view-title="{{ receiver.name }} {{ receiver.surname }}" hide-back-button="false"> -->
+<!--    <div class="bar bar-header bar-positive">
+      <h1 class="title">{{ receiverName }}</h1>
+    </div>-->
+    <!--<ion-nav-title>{{ receiverName }}</ion-nav-title>-->
+    <ion-content id="chat_bg" class="padding has-header has-footer" delegate-handle="mainScroll" scroll="true" style="margin-bottom: 15px !important; margin-top: 10px !important;">
+        <p class="typing">{{status_message}}</p>
+        <ion-list class="list chat">
+            <!-- <li ng-repeat="msg in messages track by $index" ng-class="{'item item-avatar-right item-text-wrap nopadding' : (senderId == msg.senderId),
+                                                        'item item-avatar-left item-text-wrap nopadding' : (senderId == msg.receiverId)}"> -->
+            <li ng-repeat="msg in messages track by $index" ng-class="{'item item-avatar-right item-text-wrap nopadding' : (senderId == msg.senderId),
+                                                        'item item-avatar-left item-text-wrap nopadding' : (senderId == msg.receiverId)}">
+                <!-- <img ng-src="{{msg.displayPicture}}"/> -->
+                <div ng-class="{'bubbleRight' : (senderId == msg.senderId),
+                                'bubbleLeft'  : (senderId == msg.receiverId)}">
+                    <p ng-hide="msg.isLog">{{msg.message}}
+                        <span class="span-time" am-time-ago = "{{ msg.timestamp }}"></span>
+                        <!-- <i ng-show="msg.isRead == 0 && senderId == msg.senderId" class="ion-android-done"></i>
+                        <i ng-show="msg.isRead == 1 && senderId == msg.senderId" class="ion-android-done-all"></i> -->
+                        <i ng-show="senderId == msg.senderId" ng-class="{'ion-android-done-all' : msg.isRead == 0, 'ion-android-done-all msgRead' : msg.isRead == 1}"></i>
+                    </p>
+                </div>
+            </li>
+        </ion-list>
+        <div class="button-bar quick" ng-show="msg.messageType == '1'">
+            <a class="button button-calm button-small" ng-click="quickReply('CHAT.CHAT_QUICK_REPLY_YES')">{{ 'CHAT.CHAT_QUICK_REPLY_YES' | translate }}</a>
+            <a class="button button-assertive button-small"  ng-click="quickReply('CHAT.CHAT_QUICK_REPLY_NO')">{{ 'CHAT.CHAT_QUICK_REPLY_NO' | translate }}</a>
+            <a class="button button-balanced button-small"  ng-click="quickReply('CHAT.CHAT_QUICK_REPLY_OK')">{{ 'CHAT.CHAT_QUICK_REPLY_OK' | translate }}</a>
+        </div>
     </ion-content>
     <div class="bar bar-footer item-input-inset footer-item-input-inset">
-        <label class="item-input-wrapper">
+        <select ng-model="quick" ng-change="quickReply(quick)">
+            <option selected>{{ 'CHAT.CHAT_QUICK_REPLY_YES' | translate }}</option>
+            <option>{{ 'CHAT.CHAT_QUICK_REPLY_NO' | translate }}</option>
+            <option>{{ 'CHAT.CHAT_QUICK_REPLY_OK' | translate }}</option>
+        </select>
+        <label class="item-input-wrapper" style="margin-left: 10px">
             <i class="icon ion-android-chat placeholder-icon"></i>
-            <input type="text" placeholder="Enter your message..." ng-model="message"/>
+            <input type="text" placeholder="{{ 'CHAT.CHAT_INPUT_BOX' | translate}}" ng-model="message" ng-change="updateTyping()" ng-enter="sendMessage()"/>
         </label>
         <button class="button button-dark button-clear ion-android-send icon" ng-click="sendMessage()"></button>
     </div>

@@ -1,0 +1,41 @@
+Horizont Auftrag-App
+
+Google Hesabı
+horizontberlin88@gmail.com
+pamuk19876541
+
+FIREBASE
+
+Server key: AAAAzHRLNNY:APA91bGyu9MnelIVz6VbSY7EUn-2pr3dDQuUo2559GtWzALLZZdiD3OmmJ_PtKFW2m5tQobG59wIp69lOQ5ccUZ8le2unrubsqjlfZLVF0OtHFmQv6mnET1Gk5aZmwXQX9oRN8o_JiCm
+
+Legacy server key: AIzaSyCpMGxCLwdyrpXONpvTTfDYcB7LmHG8_JQ
+
+Sender ID: 878124414166
+
+
+Apple Developer Hesabı;
+email: apple@ortung-kfz.de
+Password: bxO9tJ0V
+
+APPLE Bundle ID:
+
+Horizont Auftrag App
+
+com.horizont.auftrag
+
+14901490
+
+
+IONIC
+name: horizont_mobile
+username: horizont_mobile
+email: kafadar@ortung-kfz.de
+password: pamuk19876541
+
+APP_ID: 31ab4270
+
+
+horizont_aftrag
+
+
+IonicApplicationAPItoken : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJmZGJjMDY4Ni1mN2FlLTQ3ZmUtYmIwZC02ZjQzYWM0ZmQ0NTIifQ.ZY60gkzVPXlqmXcj3s1t-2jcw3-qPLKqC-Q6p9bExM0"

@@ -1,0 +1,69 @@
+<ion-view view-title="{{ 'APP_TITLE' | translate }}" hide-back-button="true">
+<!--    <div class="bar bar-header bar-positive">
+        <button class="button icon ion-navicon"></button>
+        <h1 class="title">{{ 'APP_TITLE' | translate }}</h1>
+        <button class="button button-dark" ng-click="logout('{{users.token}}', 'driver')">{{ 'LOGOUT_TITLE' | translate }}</button>
+    </div>-->
+    <!--<ion-nav-title>{{ 'APP_TITLE' | translate }}</ion-nav-title>
+    <ion-nav-buttons side="left"> 
+        <button class="button button-icon icon ion-navicon"></button>
+    </ion-nav-buttons>-->
+
+    <!--<ion-nav-buttons side="right">  right -->
+        <!--<button class="button button-dark" ng-click="logout('{{users.token}}', 'driver')">{{ 'LOGOUT_TITLE' | translate }}</button>-->
+    <!--</ion-nav-buttons>-->
+    <ion-nav-title>
+        <div class="row no-padding">
+            <div class="col-80 no-padding">
+                <img class="title-image" src="img/horizont_logo2.jpg" />
+            </div>
+            <div class="col-20 no-padding">
+                <a href="#app/devices" class="home_title_button button button-light" style="color: #000000;font-size: 67%;padding-left: 0;padding-right: 0;">
+                    <i class="ion-model-s"></i> {{ 'MENU.DEVICES' | translate}}
+                </a>
+            </div>
+        </div>
+    </ion-nav-title>
+    <ion-content class="padding has-header">
+        <div class="list card" ng-switch="user.drivers.length" ng-show="user_type == 'user'">
+            <div class="item item-divider" ng-show="user_type == 'user'">{{ 'LIST.DRIVER_LIST_HEADER' | translate }}</div>
+            <div class="item" ng-switch-when="0">{{ 'LIST.DRIVER_NOT_FOUND' | translate }}</div>
+            <div class="item item-avatar item-button-right" ng-repeat="driver in user.drivers" ng-switch-default ng-click="chat(driver)">
+                <img ng-src = "{{ driver.image === null ? 'img/dummy_icon.png' : 'https://www.profi-ortung.de/assets/uploads/drivers/' + driver.image }}"/>
+                <span class="online" ng-style="{'background-color': driver.online == '1' ? '#0EE700' :'red'}"></span>
+                <h2>{{ driver.name }} {{ driver.surname }}</h2>
+                <span ng-show = "driver.device_type">
+                    <img ng-src = "{{ 'img/car/car_' + driver.device_type + '.gif' }}" /> | {{ driver.device_trip_type === 1 ? 'LIST.DRIVING_TYPE_PUBLIC'  : 'LIST.DRIVING_TYPE_PRIVATE' | translate }}
+                </span>
+                <!-- <button class="button button-positive" ng-if="driver.online == '1'">
+                  <i class="icon ion-chatbubble-working"></i>
+                </button> -->
+            </div>
+        </div>
+
+        <div class="card" ng-show="user_type == 'driver'">
+            <div class="item item-divider" ng-show="user_type === 'driver'">{{ 'LIST.USER_LIST_HEADER' | translate }}</div>
+            <div class="item item-avatar item-button-right" ng-click="chat(driver.user)">
+                <img ng-src = "{{ driver.user.image === null ? 'img/dummy_icon.png' : 'https://www.profi-ortung.de/assets/uploads/users/' + driver.user.image }}"/> 
+                <span class="online" ng-style="{'background-color': driver.user.online == '1' ? '#0EE700' :'red'}"></span>
+                <h2>{{driver.user.name}} {{driver.user.surname}}</h2>
+                <!-- <button class="button button-positive" ng-if="driver.user.online == '1'" >
+                    <i class="icon ion-chatbubble-working"></i>
+                </button> -->
+            </div>
+        </div>
+
+        <div class="card" ng-switch="driver.drivers.length" ng-show="user_type == 'driver'">
+            <div class="item item-divider" ng-show="user_type === 'driver'">{{ 'LIST.DRIVER_LIST_HEADER' | translate }}</div>
+            <div class="item" ng-switch-when="0">{{ 'LIST.DRIVER_NOT_FOUND' | translate }}</div>
+            <div class="item item-avatar item-button-right" ng-repeat="driver in driver.drivers" ng-switch-default ng-click="chat(driver)">
+                <img ng-src = "{{ driver.image === null ? 'img/dummy_icon.png' : 'https://www.profi-ortung.de/assets/uploads/drivers/' + driver.image }}"/>
+                <span class="online" ng-style="{'background-color': driver.online == '1' ? '#0EE700' :'red'}"></span>
+                <h2>{{ driver.name }} {{ driver.surname }}</h2>
+                <span ng-show = "driver.device_type">
+                    <img ng-src = "{{ 'img/car/car_' + driver.device_type + '.gif' }}" /> | {{ user.device_trip_type == 1 ? 'LIST.DRIVING_TYPE_PUBLIC'  : 'LIST.DRIVING_TYPE_PRIVATE' | translate }}
+                </span>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

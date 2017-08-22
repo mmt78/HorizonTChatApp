@@ -1,0 +1,96 @@
+{
+    "APP_TITLE": "Horizont Auftrags-App",
+    "LOGOUT_TITLE": "Logout",
+    "ALL_DEVICES": "All Devices",
+    "SEARCH_DEVICE": "Search device..",
+    "LANGUAGE": "Language",
+    "PLEASE_WAIT": "Please wait..",
+    "LOADING": "Loading..",
+    "TIMEZONE": "Timezone",
+    "FILTER": "Filter",
+    "SORT_DEVICE" : "Device Sort Type",
+    "DISPLAY": "Display",
+    "TOTAL": "Total",
+    "DISPLAY_DEVICE_COUNT": "Display Device Count",
+    "SAVE": "Save",
+    "CANCEL": "Cancel",
+    "NO_NOTIFICATIONS": "You have no notifications",
+    "NEW_NOTIFICATION": "New Notification!",
+    "NOTIFICATION_SETTINGS": "Notification Settings",
+    "PERMISSION_DENIED": "Permission denied!",
+    "PERMISSION_MESSAGE": "You dont have permission for this feature. Please contact our customer service.",
+    "CONNECTION_ERROR": "Connection error!",
+    "CONNECTION_ERROR_MSG": "Please check your internet connection.",
+    "AN_ERROR_OCCURRED": "Something went wrong. Please try again later.",
+
+    "LOGIN": {
+        "TITLE": "Horizont Login",
+        "BUTTON": "Login",
+        "USERNAME": "Username",
+        "PASSWORD": "Password",
+        "LOGGING_IN": "Logging in..",
+        "FAILED": "Login failed!",
+        "INVALID_INPUTS": "Invalid username or password or user type.",
+        "USER" : "User",
+        "DRIVER" : "Driver",
+        "POPUP_TITLE" : "Error!"
+    },
+    "LOGOUT": {
+        "SUCCESS" : "Logged out successfully",
+        "ERROR" : "An error occured. Try later!"
+    },
+    "CHAT": {
+        "IS_TYPING": " is typing...",
+        "CHAT_INPUT_BOX": "Enter your message...",
+        "CHAT_PROGRESS": "Chatting as ",  
+        "CHAT_QUICK_REPLY_YES" : "YES",      
+        "CHAT_QUICK_REPLY_NO" : "NO",      
+        "CHAT_QUICK_REPLY_OK" : "OK",
+        "CHAT_NOT_DELIVERED" : "Message not sent"     
+    },
+    "LIST" : {
+        "DRIVER_LIST_HEADER": "Drivers List",
+        "USER_LIST_HEADER": "User List",
+        "USER_NOT_FOUND": "No registered user found!",
+        "DRIVER_NOT_FOUND": "No registered driver found!",
+        "DRIVING_TYPE_MODAL_TITLE" : "Select you driving type",
+        "DRIVING_TYPE_MODAL_CLOSE" : "Close",
+        "DRIVING_TYPE_PRIVATE": "PRIVATE",
+        "DRIVING_TYPE_PUBLIC" : "WORK",
+        "DRIVING_TYPE_POPUP_TITLE" : "Trip Type Error",
+        "DRIVING_TYPE_ERROR" : "Trip type couldn't be saved!"
+    },
+    "DEVICE" : {
+        "DEVICE_TYPE_SUCCESS" : "Device type set successfully",
+        "DEVICE_STATUS_SUCCESS" : "Device status set successfully",
+        "DEVICE_ACTIVE": "Active",
+        "DEVICE_INACTIVE" : "Inactive"
+    },
+    "MENU": {
+        "TITLE": "Menu",
+        "DEVICE_MENU": "Device Menu",
+        "ROUTE": "Route",
+        "NOTIFICATIONS": "Notifications",
+        "DEVICES": "Devices",
+        "SETTINGS": "Settings",
+        "LOGOUT": "Logout",
+        "PRIVACY" : "Privacy Policy",
+        "PROFILE_PICTURE": "Profile Picture",
+        "LANGUAGE": "Language",
+        "PROFILE_PICTURE_SUCCESS": "Profile picture successfully uploaded.",
+        "PROFILE_PICTURE_ERROR": "Profile picture not uploaded. Try again later!"
+    },
+    "PAGES": {
+        "DEVICES_TITLE": "Devices",
+        "DEVICE_TITLE": "Device",
+        "SETTINGS_TITLE": "Settings",
+        "LANGUAGE_TITLE": "Language",
+        "PRIVACY_TITLE" : "Privacy Policy"
+    },
+    "LANG": {
+        "TR": "Turkish",
+        "EN": "English",
+        "DE": "German",
+        "NL": "Dutch"
+    }
+}

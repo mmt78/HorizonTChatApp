@@ -1,0 +1,19 @@
+<ion-view view-title="Login" name="login-view" ng-controller="LoginController">
+    <ion-content class="padding">
+        <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Kullanıcı Adı" ng-model="data.username">
+            </label>
+            <label class="item item-input">
+                <input type="password" placeholder="Şifre" ng-model="data.password">
+            </label>
+        </div>
+        <button class="button button-block button-calm" ng-click="login()">Login</button>
+        <br/>
+        <center>
+            <button class="button icon-left ion-social-facebook button-block fb-btn" ng-click="loginWithFacebook()">
+                Facebook ile Giriş
+            </button>
+        </center>
+    </ion-content>
+</ion-view>
